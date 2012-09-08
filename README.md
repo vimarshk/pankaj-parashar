@@ -1,8 +1,5 @@
-
-[pankaj$bash]~ about
-============================================================================
-I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India.
-============================================================================
+Personal Website of Pankaj Parashar
+-----------------------------------
 
 I Follow,
 - Paul Irish (Developer advocate for Google Chrome).
@@ -13,14 +10,14 @@ I Follow,
 
 Bookmarks,
 - Smashing Magazine (http://www.smashingmagazine.com/)
-- Codrops           (http://tympanus.net/codrops/)
-- TutorialZine      (http://tutorialzine.com/)
+- Codrops (http://tympanus.net/codrops/)
+- TutorialZine (http://tutorialzine.com/)
 - Web Designer Wall (http://webdesignerwall.com/)
-- Tuts+ Hub         (http://hub.tutsplus.com/)
-- CSS-Tricks        (http://css-tricks.com/)
-- .Net Magazine     (http://www.netmagazine.com/)
-- A List Apart      (http://alistapart.com/)
-- iLove Typography  (http://ilovetypography.com/)
+- Tuts+ Hub (http://hub.tutsplus.com/)
+- CSS-Tricks (http://css-tricks.com/)
+- .Net Magazine (http://www.netmagazine.com/)
+- A List Apart (http://alistapart.com/)
+- iLove Typography (http://ilovetypography.com/)
 
 Desk Configuration,
 - System (15-incher Sony Vaio, Samsung Galaxy S3).
@@ -30,13 +27,9 @@ Desk Configuration,
 - Development (Photoshop, Dreamweaver, Sublime Text).
 
 Featured On,
-- Very Nice Sites
-- Blog-Du-Web Design
-- One Page Love
-- 1-Page Web Design
-- Instant Shift
-- Easy jQuery
+- Very Nice Sites (http://www.verynicesites.com/sites/pankaj-parashar/)
+- One Page Love (http://onepagelove.com/pankaj-parashar)
 
----------------------------------------------------------------------------
-Copyright ©2007-2012 | Powered by Google | 100% HTML5 + CSS3 W3C Validated.
+
+Copyright ©2007-2012
 ---------------------------------------------------------------------------
