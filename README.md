@@ -1,5 +1,4 @@
-Personal Website of Pankaj Parashar
------------------------------------
+#[Pankaj Parashar](http://pankajparashar.com)
 
 I Follow,
 - Paul Irish (Developer advocate for Google Chrome).
@@ -29,7 +28,3 @@ Desk Configuration,
 Featured On,
 - Very Nice Sites (http://www.verynicesites.com/sites/pankaj-parashar/)
 - One Page Love (http://onepagelove.com/pankaj-parashar)
-
-
-Copyright ©2007-2012
----------------------------------------------------------------------------
