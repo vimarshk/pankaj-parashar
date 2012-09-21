@@ -1,81 +1,81 @@
-<!DOCTYPE html>
-<!-- Explanation for uppercase HTML5 doctype : http://www.w3.org/TR/html-polyglot/#doctype -->
-<!-- Conditional hacks for IE by Paul Irish : http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!DOCTYPE html> <!-- W3C Polyglot HTML5 Markup Guidelines : http://goo.gl/Rboe5 -->
+<!-- Conditional hacks for IE by Paul Irish : http://goo.gl/Uewbx -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en">        <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en">               <![endif]-->
 <!--[if gt IE 8]> <!--> <html class="no-js" lang="en">                <!--<![endif]-->
 	<head>
-		<!-- Character Encoding -->
-		<!-- All markup should be delivered as UTF-8, as its the most friendly for internationalization. It should be designated in both the HTTP header and the head of the document. -->
+		<!-- Character Encoding : http://goo.gl/tFw7v -->
 		<meta charset="utf-8">
 		
-		<!-- Chrome Frame for IE : http://www.chromium.org/developers/how-tos/chrome-frame-getting-started -->	
+		<!-- Chrome Frame for IE : http://goo.gl/GRNYi -->	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width">
 
-		<!-- Single most valid html tag -->		
+		
+		<!-- Single most valid html tag : http://goo.gl/BPhmz -->		
 		<title>Pankaj Parashar</title>
 		
-		<!-- Enable manual DNS pre-fetching. -->
-		<!-- Make a handshake with a foreign domain, so the connection goes faster when the user eventually needs to access it. This works well for loading in assets (like images) from another domain, or a JavaScript library from a CDN. -->
-		<link rel="dns-prefetch" href="//ajax.googleapis.com" />
-		<link rel="dns-prefetch" href="//www.verynicesites.com/" />
-		<link rel="dns-prefetch" href="//raw.github.com/" />
-		<link rel="dns-prefetch" href="//bitbucket.org/" />
-		<link rel="dns-prefetch" href="//meyerweb.com/" />
-		<link rel="dns-prefetch" href="//fonts.googleapis.com/" />
-		<link rel="dns-prefetch" href="//api.easyjquery.com/" />
-		<link rel="dns-prefetch" href="//www.google-analytics.com" />
-		<link rel="dns-prefetch" href="//goosh.appspot.com" />
+		<!-- Enable manual DNS pre-fetching :  http://goo.gl/8HTJy -->		
+		<link rel="dns-prefetch" href="//meyerweb.com/">					<!-- Eric Meyer's Reset CSS     -->
+		<link rel="dns-prefetch" href="//necolas.github.com/">				<!-- Normalize css for browsers -->
+		<link rel="dns-prefetch" href="//html5shiv.googlecode.com/">		<!-- To enable html5 elements   -->
+		<link rel="dns-prefetch" href="//modernizr.com/">					<!-- Feature detection library  -->
+
+		<link rel="dns-prefetch" href="//browsehappy.com/">					<!-- For weak browsers			-->
+		<link rel="dns-prefetch" href="//goosh.appspot.com/">				<!-- Main Application Logic     -->
+		<link rel="dns-prefetch" href="//sa.entireweb.com/">				<!-- Entireweb Speedy Ads 		-->
+		<link rel="dns-prefetch" href="//www.verynicesites.com/">			<!-- Images from Amazon S3      -->		
+		<link rel="dns-prefetch" href="//ajax.googleapis.com/">				<!-- jQuery from Google's CDN   -->
+		<link rel="dns-prefetch" href="//raw.github.com/">					<!-- Display current datetime   -->
+
+		<link rel="dns-prefetch" href="//bitbucket.org/">					<!-- Countdown timer            -->
+		<link rel="dns-prefetch" href="//api.easyjquery.com/">				<!-- Detect client's IP Address --> 
+		<link rel="dns-prefetch" href="//www.google-analytics.com/">		<!-- Google Analytics script    -->
 	
-		<!-- Search Engine Optimisation -->
+		<!-- Search Engine Optimisation : http://goo.gl/wHn9j -->
 		<meta name="robots" content="nofollow">
 		<meta name="author" content="Pankaj Parashar">
 		<meta name="description" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India.">
-		<meta name="keywords" content="pankaj parashar, developer, designer, unix, cmd, bash">
-		
-		<!-- Reset CSS -->
-		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-		<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
-			
-		<!-- Mathias Bynens Touch Icons : http://mathiasbynens.be/notes/touch-icons-->
-		<!-- For third-generation iPad with high-resolution Retina display: -->
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
-		<!-- For iPhone with high-resolution Retina display: -->
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
-		<!-- For first- and second-generation iPad: -->
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
-		<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-		<!-- Favicon for rest of the devices -->
+		<meta name="keywords" content="pankaj parashar, developer, designer, unix, cmd, bash, techie, geek, jp morgan">
+
+		<!--  Mobile Viewport meta tag : http://goo.gl/SF3Av 
+		device-width  = Occupy full width of the screen in its current orientation
+		initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+		maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
+					
+		<!-- Mathias Bynens Touch Icons : http://goo.gl/f6VQq -->
 		<link rel="shortcut icon" href="favicon.ico">
 		
-		<!-- Site specific stylesheet -->
+		<!-- Reset CSS -->
+		<!-- For Legacy Browsers : http://goo.gl/EVfGg -->
+		<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+		<!-- For Non-Legacy Browsers : http://goo.gl/Gfszl -->
+		<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+
+		<!-- Site specific stylesheet : http://goo.gl/puoQR -->
 		<link rel="stylesheet" href="css/style.css">
 		
-		<!-- From http://www.sitemaps.org/protocol.html -->
-		<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+		<!-- Sitemap : http://goo.gl/w87Z4 -->
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
 		
 		<!-- Suppress IE6 image toolbar -->
-		<meta http-equiv="imagetoolbar" content="false" />
+		<meta http-equiv="imagetoolbar" content="false">
 		
 		<!-- IE9 Pinned Site title -->
-		<meta name="application-name" content="Pankaj Pasrashar" />
-		<meta name="msapplication-tooltip" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India." />
-		<meta name="msapplication-starturl" content="http://pankajparashar.com/" />
-		<meta name="msapplication-navbutton-color" content="#f00" />
-		<meta name="msapplication-window" content="width=800;height=600" />
-		<meta name="msapplication-task" content="name=Task 1;action-uri=http://pankajparashar.com/;icon-uri=http://pankajparashar.com/favicon.ico" />
-	
-		<!-- Facebook Open Graph -->
-		<meta property="og:title" content="Pankaj Parashar" />
-		<meta property="og:description" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India." />
-		<meta property="og:image" content="http://pankajparashar.com/favicon.ico" />
+		<meta name="application-name" content="Pankaj Parashar">
 
-		<!-- Twitter Cards : https://dev.twitter.com/docs/cards -->
+		<meta name="msapplication-tooltip" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India.">
+		<meta name="msapplication-starturl" content="http://pankajparashar.com/">
+		<meta name="msapplication-navbutton-color" content="#f00">
+		<meta name="msapplication-window" content="width=800;height=600">
+		<meta name="msapplication-task" content="name=Task 1;action-uri=http://pankajparashar.com/;icon-uri=http://pankajparashar.com/favicon.ico">
+	
+		<!-- Facebook Open Graph : http://goo.gl/iOAeQ -->
+		<meta property="og:title" content="Pankaj Parashar">
+		<meta property="og:description" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India.">
+		<meta property="og:image" content="http://pankajparashar.com/favicon.ico">
+
+		<!-- Twitter Cards : http://goo.gl/MD7se -->
 		<meta name="twitter:card" content="Pankaj Parashar">
 		<meta name="twitter:site" content="@pankajparashar">
 		<meta name="twitter:creator" content="@pankajparashar">
@@ -83,50 +83,79 @@
 		<meta name="twitter:title" content="Pankaj Parashar">
 		<meta name="twitter:description" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India.">
 		<meta name="twitter:image" content="favicon.ico">
+
 		
-		<!-- Enable HTML5 tags for legacy IE browsers : http://paulirish.com/2011/the-history-of-the-html5-shiv/ -->
+		<!-- Enable HTML5 tags for legacy IE browsers : http://goo.gl/gWcE8 -->
  		<!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 		
 		<!-- Canonical URL - Use this url for this page -->
-		<link rel="canonical" href="">
+		<link rel="canonical" href="http://pankajparashar.com">
 			
 		<!-- Modernizer library for Feature Detection -->
-		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+		<script src="http://modernizr.com/downloads/modernizr.js"></script>
 	</head>
 	<body id="body">
+
 		<!-- Prompt IE6 users to install Chrome Frame : chromium.org/developers/how-tos/chrome-frame-getting-started -->
 		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 		<div id="container">
 			<div id="head">
-				<span id="date">Loading Local Date & Time...</span> <span id="client"></span>  <span id="ip-address"></span>
-				<p class="welcome">---- Welcome to my <a href="http://pankajparashar.com/" rel="author">URL</a> ----  (start with <span class="helptext">&#8216;help&#8217;</span> if you are lost)</p>
-				Counting my breath since, <span id="count-up"></span>
+				<span id="date">Loading Local Date & Time ...</span> <span id="client"></span>  <span id="ip-address"></span>
+				<p class="welcome">---- Welcome to <span class="reformat_m">my</span> <a href="http://pankajparashar.com/" rel="author">URL</a> ----  (start with <span class="helptext">&#8216;help&#8217;</span> if you are lost)</p>
+
+				Counting my breath since, <span id="count-up">...</span>
 			</div>
 			<div id="output"></div>
 			<div id="input">
-				<form name="f" onSubmit="return false;" class="cmdline">
-					<table class="inputtable">
+				<form name="f" onSubmit="return false;">
+					<table>
 						<tbody>
 							<tr>
-								<td><div id="prompt" class="less" style="color:#FF6400;font-size:14px;"></div></td>
-								<td class="inputtd"><input id="inputfield" name="q" type="text" class="cmdline" autocomplete="off"></td>
+
+								<td><div id="prompt"></div></td>
+								<td><input id="inputfield" name="q" type="text" autocomplete="off" tabindex="1"></td>
 							</tr>
 						</tbody>
 					</table>
 				</form>
 			</div>
 		</div>
+		<div class="ads_section">
+
+			<script type="text/javascript">
+				sa_client = "f53d4e9f6c303a508b875da3ddc358ae";
+				sa_code = "823a5d73fcad20c7505426a1f0fc203f";
+				sa_protocol = ("https:"==document.location.protocol)?"https":"http";
+				sa_pline = "0";
+				sa_maxads = "5";
+				sa_bgcolor = "FFFFFF";
+				sa_bordercolor = "3EBEF3";
+				sa_superbordercolor = "3EBEF3";
+				sa_linkcolor = "001EB5";
+				sa_desccolor = "000000";
+				sa_urlcolor = "005677";
+				sa_b = "0";
+				sa_format = "column_120x240";
+				sa_width = "120";
+				sa_height = "240";
+				sa_location = "0";
+				sa_radius = "0";
+				sa_borderwidth = "1";
+				sa_font = "0";
+				document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+"://sa.entireweb.com/sense.js'%3e%3c/script%3e"));
+			</script>
+		</div>
 		<a href="http://www.verynicesites.com/sites/pankaj-parashar/" class="award">Best Web Design 2012</a>		
 		
 		<!-- JavaScript at the bottom for fast page loading -->
-		
 		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.0.min.js"><\/script>')</script>
+
 		
-		<!-- Scripts concatenated and minified via build script -->
+		<!-- Scripts concatenated and minified via Ant build script -->
 		<script src="https://raw.github.com/timrwood/moment/1.6.2/min/moment.min.js"></script>
 		<script src="https://bitbucket.org/mckamey/countdown.js/raw/tip/countdown.js"></script>	
 	
@@ -134,39 +163,30 @@
 		<script src="js/script.js"></script>
 		<!-- End scripts -->
 		
-		<!-- Require EasyJQuery After JQuery 
-		http://www.easyjquery.com/detect-get-clients-ip-address-country-using-javascript-php/ -->
-		<script type="text/javascript" language="Javascript" src="http://api.easyjquery.com/easyjquery.js"></script>
-		<script type="text/javascript" language="Javascript">
-			function my_callback(json) {
-				temp = "IP : " + json.IP;
-				temp += " \nContinent Code : " + json.continentCode;
-				temp += " \nContinent Name : " + json.continentName;
-				temp += " \nCountry : " + json.COUNTRY;
-				temp += " \nCountry Code 2 : " + json.countryCode2;
-				temp += " \nCountry Code 3 : " + json.countryCode3;
-				temp += " \nCountry Name : " + json.countryName; 
-				temp += " \nRegion Name : " + json.regionName;
-				temp += " \nCity Name : " + json.cityName;
-				temp += " \nCity Latitude : " + json.cityLatitude;
-				temp += " \nCity Longitude : " + json.cityLongitude;
-				temp += " \nCountry Latitude : " + json.countryLatitude;
-				temp += " \nCountry Longitude : " + json.countryLongitude;
-				temp += " \nLocal TimeZone : " + json.localTimeZone;
-				temp += " \nLocal Time : " + json.localTime;
-				document.getElementById("ip-address").innerHTML="#2: IP - <a href='javascript:load_info(temp)'>" + json.IP + "</a>";
-			}
-			
-			function load_info(temp123) {
-				alert(temp123);
-			}
-			
+		<!-- Detect client-side IP & other details using easy-jquery : http://goo.gl/ti4mQ -->
+
+		<script src="http://api.easyjquery.com/easyjquery.js"></script>
+		<script>
+			function my_callback(json) { document.getElementById("ip-address").innerHTML="#2: IP - <a href='#'>" + json.IP + "</a>"; }
 			EasyjQuery_Get_IP("my_callback"); 
 		</script>
 
-		<!-- Asynchronous Google Analytics snippet compressed by Mathias Bynens : http://mathiasbynens.be/notes/async-analytics-snippet -->
+		<!-- Asynchronous Google Analytics Snippet compressed by Mathias Bynens : http://goo.gl/2s19j -->
 		<script>
 			_gaq = [['_setAccount', 'UA-27630966-2'], ['_setDomainName', 'pankajparashar.com'], ['_trackPageview']]; (function(d, t) { var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.src = '//www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s) } (document, 'script'))
+			
+			$(document).ready(function(){
+				$('a').each(function() {
+				   var a = new RegExp('/' + window.location.host + '/');
+				   if(!a.test(this.href)) {
+					   $(this).click(function(event) {
+						   event.preventDefault();
+						   event.stopPropagation();
+						   window.open(this.href, '_blank');
+					   });
+				   }
+				});
+			})
 		</script>
 	</body>
 </html>
