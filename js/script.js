@@ -1,7 +1,7 @@
 /* =================================== *
  * Author : Pankaj Parashar            * 
  * Last Updated : 2012-08-12           *
- * Compression Engine : YUI Compressor *
+ * Compression Engine : YUI Compressor,http://marijnhaverbeke.nl//uglifyjs *
  * Version : 1.0                       * 
  * =================================== */
 
@@ -303,7 +303,7 @@ goosh.set.list["style.sh"].set = function(A) {
     goosh.config.shcolor = A;
     return true
 };
-goosh.set.list["style.link"] = new goosh.set.base("goosh.config.linkcolor", "#666666", "goosh link color");
+goosh.set.list["style.link"] = new goosh.set.base("goosh.config.linkcolor", "#09c", "goosh link color");
 goosh.set.list["style.link"].set = function(A) {
     goosh.gui.setstyleclass("a", "color: " + A);
     goosh.config.linkcolor = A;
@@ -556,34 +556,31 @@ goosh.module.about = function() {
 		temp += "<li><a href='http://nicolasgallagher.com/' target='_blank' title='Nicolas Gallagher'>Nicolas Gallagher</a> (Frontend Engineer at <a href='https://twitter.com/'>Twitter</a>).</li>";
 		temp += "<li><a href='http://mathiasbynens.be/' target='_blank' title='Mathias Bynens'>Mathias Bynens</a> (Freelance web developer from Belgium).</li>";
 		temp += "<li><a href='http://hakim.se/' target='_blank' title='Hakim El Hattab'>Hakim El Hattab</a> (Lead Interactive Developer at <a href='http://www.qwiki.com/'>Qwiki</a>).</li>";
-		temp += "<li><a href='http://farukat.es/' target='_blank' title='Faruk Ates'>Faruk Ates</a> (Creator & Lead Developer of <a href='http://modernizr.com/'>Modernizer</a>).</li>";
+		temp += "<li><a href='http://desandro.com/'>David DeSandro</a> (Web designer at <a href='https://twitter.com/'>Twitter</a> a.k.a of <a href='http://isotope.metafizzy.co/'>Isotope</a> fame).</a> <span style='color:#898989'>(<a href='http://twitter.com/pankajparashar/web-developers/members' target='_blank' class='more_links'>+more</a>)</span></li>"
 		temp += "</ul>";
 		temp += "<label>Bookmarks</label>,";
-		temp += "<table><tr><td>";
         temp += "<ul>";
-        temp += "<li><a href='http://www.smashingmagazine.com/'>Smashing Magazine</a></li>";
-        temp += "<li><a href='http://tympanus.net/codrops/'>Codrops</a></li>";
-        temp += "<li><a href='http://tutorialzine.com/'>TutorialZine</a></li>";
-		temp += "</td><td><ul>";
-        temp += "<li><a href='http://webdesignerwall.com/'>Web Designer Wall</a></li>";
-        temp += "<li><a href='http://hub.tutsplus.com/'>Tuts+ Hub</a></li>";
-		temp += "<li><a href='http://css-tricks.com'>CSS-Tricks</a></li>";
-		temp += "</td><td><ul>";
-		temp += "<li><a href='http://www.netmagazine.com/'>.Net Magazine</a></li>";
-		temp += "<li><a href='http://www.alistapart.com/'>A List Apart</a></li>";
-		temp += "<li><a href='http://ilovetypography.com/'>iLove Typography</a></li>";
-        temp += "</ul></td></tr></table>";        
+        temp += "<li><a href='http://www.smashingmagazine.com/'>Smashing Magazine</a> (Magazine for web designers & developers by <a href='http://www.smashingmagazine.com/author/vitaly-friedman/'>Vitaly Friedman</a>).</li>";
+        temp += "<li><a href='http://tympanus.net/codrops/'>Codrops</a> (Useful resources and inspiration for creative minds).</li>";
+		temp += "<li><a href='http://css-tricks.com'>CSS-Tricks</a> (Web design tutorials via <a href='http://chriscoyier.net/'>Chris Coyier</a>).</li>";
+		temp += "<li><a href='http://www.inserthtml.com/'>Insert HTML</a> (Web Design and Development Blog by Johnny Simpson).</li>";
+		temp += "<li><a href='http://www.impressivewebs.com/'>Impressive Webs</a> (Web Design Articles & Tutorials by Louis Lazaris). <span style='color:#898989'>(<a href='https://twitter.com/pankajparashar/web-design-blogs/members' target='_blank' class='more_links'>+more</a>)</span></li>";
+        temp += "</ul>";        
 		temp += "<label>Desk Configuration</label>,";
         temp += "<ul>";
-        temp += "<li>System (15-incher Sony Vaio, Samsung Galaxy S3).</li>";
+        temp += "<li>System (15-inch Sony Vaio laptop, Samsung Galaxy S3).</li>";
         temp += "<li>Internet (Chrome, FileZilla, Skype, BitTorrent).</li>";
         temp += "<li>Security (Microsoft Security Essentials, TunnelBear).</li>";
-        temp += "<li>Applications (7zip, Tune Up, Power ISO).</li>";
+        temp += "<li>Applications (7zip, TuneUp, Power ISO, VLC, Foxit Reader).</li>";
 		temp += "<li>Development (Photoshop, Dreamweaver, Sublime Text).</li>";
 		temp += "</ul>";
 	    temp += "<label>Featured On</label>,";
-		temp += "<table><tr><td><ul><li><a href='http://www.verynicesites.com/sites/pankaj-parashar/' target='_blank' title='Very Nice Sites'>Very Nice Sites</a></li><li><a href='http://www.blogduwebdesign.com/webdesign-inspiration/30-web-design-tendances-pour-juillet-2012/750' target='_blank' title='Blog-Du-Web Design'>Blog-Du-Web Design</a></li><li><a href='http://onepagelove.com/pankaj-parashar' target='_blank' title='One Page Love'>One Page Love</a></li></ul></td><td><ul><li><a href='http://www.1pagewebdesign.com/2012/08/pankaj-parashar/' target='_blank' title='1Page Web Design'>1-Page Web Design</a></li><li><a href='http://www.instantshift.com/2012/08/14/single-page-website-designs-50-fresh-creative-examples/' target='_blank' title='Instant Shift'>Instant Shift</a></li><li><a href='http://www.easyjquery.com/single-page-website-designs-50-fresh-creative-examples-2/' target='_blank' title='Easy jQuery'>Easy jQuery</a></li></ul></td></tr></table>";
-		temp += "<span class='wall'>Copyright <a rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/' title='Creative Commons CC0 1.0' target='_blank'>&copy;2007-2012</a> | Powered by <a rel='application' href='https://appengine.google.com/' title='Google App Engine' target='_blank'>Google</a> | 100% <a href='http://validator.w3.org/check?uri=http%3A%2F%2Fpankajparashar.com%2F' style='text-decoration:line-through'>HTML5</a> + <a href='http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fpankajparashar.com%2F' style='text-decoration:line-through'>CSS3</a> W3C Validated.</span>";
+		temp += "<ul>";
+		temp += "<li><a href='http://www.verynicesites.com/sites/pankaj-parashar/' target='_blank' title='Very Nice Sites'>Very Nice Sites</a> (Best web designs of 2012).</li>";
+		temp += "<li><a href='http://onepagelove.com/pankaj-parashar' target='_blank' title='One Page Love'>One Page Love</a> (Unique showcase of single page websites).</li>";
+		temp += "<li><a href='http://www.1pagewebdesign.com/2012/08/pankaj-parashar/' target='_blank' title='1Page Web Design'>1-Page Web Design</a> (One page web design gallery).</li>";
+		temp += "</ul>";
+		temp += "<span class='wall'><a rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/' title='Creative Commons CC0 1.0' target='_blank'>&copy;" + new Date().getFullYear() + "</a> | Powered by <a rel='application' href='https://appengine.google.com/' title='Google App Engine' target='_blank'>Google</a> | Hosted on <a href='http://github.com/'>GitHub</a> | Craft : <a href='http://validator.w3.org/check?uri=http%3A%2F%2Fpankajparashar.com%2F'>HTML5</a> + <a href='http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fpankajparashar.com%2F'>CSS3</a> | <a href='https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fpankajparashar.com%2F&source=tweetbutton&text=Pankaj%20Parashar&url=http%3A%2F%2Fpankajparashar.com&via=pankajparashar' title='Click to send this page to Twitter!' target='_blank' style='color:black;background-color:#1982d1;padding:0 2px'>Tweet</a>.</span>";
         goosh.gui.outln(temp);
 		goosh.gui.outln("");
         /*goosh.gui.outln(" &nbsp;Font Stack,");<span style='color:#666'>19.089373,72.878494</span>
@@ -648,7 +645,7 @@ goosh.module.contact = function() {
     this.help = "find out ways to contact me";
     this.parameters = "[no parameters]";
     this.call = function(args) {
-        goosh.gui.outln("<table width='60%' border='0' style='margin-left:2px;'><tr><td width='50%'><a href='mailto:parashar.p.pankaj@gmail.com?subject=I want to hire you' target='_blank' title='Get in touch on e-mail'>Email</a><br/>parashar<span style='color:#666'>(dot)</span>p<span style='color:#666'>(dot)</span>pankaj<span style='color:#666'>(at)</span>gmail<span style='color:#666'>(dot)</span>com</td><td><a href='https://www.facebook.com/pankaj.p.parashar' target='_blank' title='Subscribe to my facebook updates'>Facebook</a><br/>pankaj<span style='color:#666'>(dot)</span>p<span style='color:#666'>(dot)</span>parashar</td></tr><tr>&nbsp;</tr><tr><td><br/><a href='http://www.delicious.com/pankajparashar' target='_blank' title='Feast on my delicious bookmarks'>Delicious</a><br/>pankajparashar</td><td><br/><a href='https://twitter.com/#!/pankajparashar' target='_blank' title='Follow me on twitter'>Twitter</a><br/><span style='color:#666'>(at)</span>pankajparashar</td></tr><tr><td></td><td></td></tr><tr>&nbsp;</tr><tr><td><br/><a href='' target='_blank' title='Listen my grooveshark playlist'>Grooveshark</a><br/><span style='color:#666'>(hash)</span>pankajparashar<br/></td><td><br/><a href='http://gplus.to/pankajparashar'>Google+</a><br/><span style='color:#666'>(plus)</span>pankajparashar</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><a href='http://jsfiddle.net/user/pankajparashar/fiddles/'>jsFiddle</a><br/>jsfiddle.net/user/pankajparashar/fiddles/</td><td><a href='skype:pankajparashar1510?call'>Skype</a><br>pankajparashar<span style='color:#666'>1510</span></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><a href='pinterest.com/pankajparashar/'>Pinterest</a><br/>pinterest.com/pankajparashar/</td><td><a href='pankajparashar.github.com/Hello-World/'>GitHub</a><br/>pankajparashar<span style='color:#666'>(dot)</span>github<span style='color:#666'>(dot)</span>com</td></tr></table>");
+        goosh.gui.outln("<table border='0' style='margin-left:2px;'><tr><td width='360px'><a href='mailto:parashar.p.pankaj@gmail.com?subject=I want to hire you' target='_blank' title='Get in touch on e-mail'>Email</a><br/>parashar<span style='color:#666'>(dot)</span>p<span style='color:#666'>(dot)</span>pankaj<span style='color:#666'>(at)</span>gmail<span style='color:#666'>(dot)</span>com</td><td><a href='https://www.facebook.com/pankaj.p.parashar' target='_blank' title='Subscribe to my facebook updates'>Facebook</a><br/>pankaj<span style='color:#666'>(dot)</span>p<span style='color:#666'>(dot)</span>parashar</td></tr><tr>&nbsp;</tr><tr><td><br/><a href='http://www.delicious.com/pankajparashar' target='_blank' title='Feast on my delicious bookmarks'>Delicious</a><br/>pankajparashar</td><td><br/><a href='https://twitter.com/#!/pankajparashar' target='_blank' title='Follow me on twitter'>Twitter</a><br/><span style='color:#666'>(at)</span>pankajparashar</td></tr><tr><td></td><td></td></tr><tr>&nbsp;</tr><tr><td><br/><a href='' target='_blank' title='Listen my grooveshark playlist'>Grooveshark</a><br/><span style='color:#666'>(hash)</span>pankajparashar<br/></td><td><br/><a href='http://gplus.to/pankajparashar'>Google+</a><br/><span style='color:#666'>(plus)</span>pankajparashar</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><a href='http://jsfiddle.net/user/pankajparashar/fiddles/'>jsFiddle</a><br/>jsfiddle.net/user/pankajparashar/fiddles/</td><td><a href='skype:pankajparashar1510?call'>Skype</a><br>pankajparashar<span style='color:#666'>1510</span></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td><a href='pinterest.com/pankajparashar/'>Pinterest</a><br/>pinterest.com/pankajparashar/</td><td><a href='pankajparashar.github.com/Hello-World/'>GitHub</a><br/>pankajparashar<span style='color:#666'>(dot)</span>github<span style='color:#666'>(dot)</span>com</td></tr></table>");
         $('#input')[0].scrollIntoView();
     }
 };
@@ -669,7 +666,7 @@ goosh.module.credits = function() {
         goosh.gui.outln("<dt>Colors</dt><dd><a href='http://developer.android.com/design/style/color.html'>Android Color Swatches</a> : Anchor Text(Default) - #0099CC, Anchor Text(Hover) - #0099CC, Shell Prompt - #FF8800, Help Text - #99CC00.</dd>");
         goosh.gui.outln("<dt>Browser Compatiblity</dt><dd>Adobe Browser Lab - Chrome 18(Windows), Firefox 11(OS X & Windows), IE (6/7/8/9), Safari 5.1. <br/>Adobe Shadow - iOS, Android & <a href='http://www.browserstack.com/'>BrowserStack</a> - Opera 12, Nightly.</dd>");
         goosh.gui.outln("<dt>Reset CSS</dt><dd>Initial version - <a href='http://meyerweb.com/'>Eric Meyer</a>. More recent version of Reset CSS modified by Richard Clark is available <a href='http://html5doctor.com/html-5-reset-stylesheet/'>here</a>.<br/>Version 2 - Normalize.css by Nicolas Gallagher (also part of H5BP).</dd>");
-        goosh.gui.outln("<dt>Coding Standards</dt><dd>Template - H5BP + Bootstrap, NA Isobar - Front-end Code Standards & Best Practices.<br/>Markup : HTML5 (W3C Draft Specs), Stylesheet : CSS3, Character Set : UTF-8 <a href='https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fpankajparashar.com%2F&source=tweetbutton&text=Pankaj%20Parashar&url=http%3A%2F%2Fpankajparashar.com&via=pankajparashar' title='Click to send this page to Twitter!' target='_blank'></a></dd>");
+        goosh.gui.outln("<dt>Coding Standards</dt><dd>Template - H5BP + Bootstrap, NA Isobar - Front-end Code Standards & Best Practices.<br/>Markup : HTML5 (W3C Draft Specs), Stylesheet : CSS3, Character Set : UTF-8</dd>");
         goosh.gui.outln("<dt>Optimisation Tools</dt><dd><a href='http://www.google.com/webmasters/tools/'>Google Webmaster Tools</a> + <a href='https://www.google.com/analytics/'>Google Site Analytics</a> (Compressed code manufactured by Mathias Bynens, available <a href='http://mathiasbynens.be/notes/async-analytics-snippet'>here</a>).");
         goosh.gui.outln("</dl>");
         $('#input')[0].scrollIntoView();
@@ -1302,6 +1299,7 @@ goosh.module.open = function() {
     this.call = function(B) {
         for (i = 0; i < B.length; i++) {
             var A = B[i];
+
             if (A.indexOf("http://") == -1 && A.indexOf("https://")) {
                 A = "http://" + A
             }
@@ -1699,5 +1697,5 @@ setInterval(function() {
     document.getElementById("date").innerHTML = moment().format("dddd, MMMM DD YYYY, HH:mm:ss");
     document.getElementById("count-up").innerHTML = countdown(new Date(1989, 10, 15));
 }, 1000);
-
+$('#input').css("color", "#FF6400");
 $("a").attr("target","_blank");
