@@ -1,21 +1,20 @@
 <!DOCTYPE html> <!-- Polyglot Markup: HTML-Compatible XHTML Documents : http://goo.gl/Rboe5, http://goo.gl/OqJU4 -->
-<!-- Conditional hacks for IE by Paul Irish : http://goo.gl/Uewbx -->
+<!-- Conditional hacks for IE by Paul Irish : http://goo.gl/Uewbx, http://goo.gl/1ISS3 -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en">        <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en">               <![endif]-->
 <!--[if gt IE 8]> <!--> <html class="no-js" lang="en">                <!--<![endif]-->
 	<head>
-		<!-- Character Encoding : http://goo.gl/z1x1O -->
+		<!-- Character Encoding : http://goo.gl/z1x1O, http://goo.gl/qLi1G -->
 		<meta charset="utf-8">
 		
-		<!-- Chrome Frame for IE : http://goo.gl/GRNYi -->	
+		<!-- Chrome Frame for IE : http://goo.gl/GRNYi, http://goo.gl/kfYjY -->	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
 		
 		<!-- Single most valid html tag : http://goo.gl/BPhmz -->		
 		<title>Pankaj Parashar</title>
 		
-		<!-- Enable manual DNS pre-fetching :  http://goo.gl/8HTJy -->		
+		<!-- Enable manual DNS pre-fetching : http://goo.gl/8HTJy -->		
 		<link rel="dns-prefetch" href="//meyerweb.com/">				<!-- Eric Meyer's Reset CSS     -->
 		<link rel="dns-prefetch" href="//necolas.github.com/">			<!-- Normalize css for browsers -->
 		<link rel="dns-prefetch" href="//html5shiv.googlecode.com/">	<!-- To enable html5 elements   -->
@@ -61,7 +60,6 @@
 		
 		<!-- IE9 Pinned Site title -->
 		<meta name="application-name" content="Pankaj Parashar">
-
 		<meta name="msapplication-tooltip" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India.">
 		<meta name="msapplication-starturl" content="http://pankajparashar.com/">
 		<meta name="msapplication-navbutton-color" content="#f00">
@@ -81,7 +79,6 @@
 		<meta name="twitter:title" content="Pankaj Parashar">
 		<meta name="twitter:description" content="I am 22yrs old, Frontend UI/UX Designer + Web Developer, from Mumbai, India.">
 		<meta name="twitter:image" content="favicon.ico">
-
 		
 		<!-- Enable HTML5 tags for legacy IE browsers : http://goo.gl/gWcE8 -->
  		<!--[if lt IE 9]>
@@ -92,17 +89,15 @@
 		<link rel="canonical" href="http://pankajparashar.com">
 			
 		<!-- Modernizer library for Feature Detection -->
-		<script src="http://modernizr.com/downloads/modernizr.js"></script>
+		<script src="js/libs/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body id="body">
-
-		<!-- Prompt IE6 users to install Chrome Frame : chromium.org/developers/how-tos/chrome-frame-getting-started -->
+		<!-- Prompt IE6 users to install Chrome Frame : http://goo.gl/GRNYi, http://goo.gl/kfYjY -->
 		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 		<div id="container">
 			<div id="head">
 				<span id="date">Loading Local Date & Time ...</span> <span id="client"></span>  <span id="ip-address"></span>
-				<p class="welcome">---- Welcome to <span class="reformat_m">my</span> <a href="http://pankajparashar.com/" rel="author">URL</a> ----  (start with <span class="helptext">&#8216;help&#8217;</span> if you are lost)</p>
-
+				<p class="welcome">---- Welcome to my <a href="http://pankajparashar.com/" rel="author">URL</a> ----  (start with <span class="helptext">&#8216;help&#8217;</span> if you are lost)</p>
 				Counting my breath since, <span id="count-up">...</span>
 			</div>
 			<div id="output"></div>
@@ -113,7 +108,7 @@
 							<tr>
 
 								<td><div id="prompt"></div></td>
-								<td><input id="inputfield" name="q" type="text" autocomplete="off" tabindex="1"></td>
+								<td><input id="inputfield" name="q" type="text" autocomplete="off" tabindex="1"/></td>
 							</tr>
 						</tbody>
 					</table>
@@ -121,8 +116,7 @@
 			</div>
 		</div>
 		<div class="ads_section">
-
-			<script type="text/javascript">
+			<script>
 				sa_client = "f53d4e9f6c303a508b875da3ddc358ae";
 				sa_code = "823a5d73fcad20c7505426a1f0fc203f";
 				sa_protocol = ("https:"==document.location.protocol)?"https":"http";
@@ -142,49 +136,14 @@
 				sa_radius = "0";
 				sa_borderwidth = "1";
 				sa_font = "0";
-				document.write(unescape("%3cscript type='text/javascript' src='"+sa_protocol+"://sa.entireweb.com/sense.js'%3e%3c/script%3e"));
+				document.write(unescape("%3cscript type='text/javascript' src='"+(("https:"==document.location.protocol)?"https":"http")+"://sa.entireweb.com/sense.js'%3e%3c/script%3e"));
 			</script>
 		</div>
 		<a href="http://www.verynicesites.com/sites/pankaj-parashar/" class="award">Best Web Design 2012</a>		
 		
-		<!-- JavaScript at the bottom for fast page loading -->
-		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.0.min.js"><\/script>')</script>
-
-		
-		<!-- Scripts concatenated and minified via Ant build script -->
-		<script src="https://raw.github.com/timrwood/moment/1.6.2/min/moment.min.js"></script>
-		<script src="https://bitbucket.org/mckamey/countdown.js/raw/tip/countdown.js"></script>	
-	
+		<!-- JavaScript at the bottom, to accelerate page loading -->
 		<script src="js/plugins.js"></script>
 		<script src="js/script.js"></script>
-		<!-- End scripts -->
-		
-		<!-- Detect client-side IP & other details using easy-jquery : http://goo.gl/ti4mQ -->
-
-		<script src="http://api.easyjquery.com/easyjquery.js"></script>
-		<script>
-			function my_callback(json) { document.getElementById("ip-address").innerHTML="#2: IP - <a href='#'>" + json.IP + "</a>"; }
-			EasyjQuery_Get_IP("my_callback"); 
-		</script>
-
-		<!-- Asynchronous Google Analytics Snippet compressed by Mathias Bynens : http://goo.gl/2s19j -->
-		<script>
-			_gaq = [['_setAccount', 'UA-27630966-2'], ['_setDomainName', 'pankajparashar.com'], ['_trackPageview']]; (function(d, t) { var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.src = '//www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s) } (document, 'script'))
-			
-			$(document).ready(function(){
-				$('a').each(function() {
-				   var a = new RegExp('/' + window.location.host + '/');
-				   if(!a.test(this.href)) {
-					   $(this).click(function(event) {
-						   event.preventDefault();
-						   event.stopPropagation();
-						   window.open(this.href, '_blank');
-					   });
-				   }
-				});
-			})
-		</script>
+		<!-- End scripts -->		
 	</body>
 </html>
