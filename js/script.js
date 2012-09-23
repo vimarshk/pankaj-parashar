@@ -540,7 +540,9 @@ goosh.modules.register = function(name, base) {
     eval("goosh.module." + name + ".prototype = new goosh.module." + base + ";goosh.modobj." + name + " = new goosh.module." + name + ';goosh.modules.list["' + name + '"] = goosh.modobj.' + name + ";")
     };
 
-/*... About Module ...*/
+/* ============ *
+ * About Module *
+ * ============ */
 goosh.module.about = function() {
     this.name = "about";
     this.aliases = new Array("about", "abt");
@@ -548,12 +550,19 @@ goosh.module.about = function() {
     this.parameters = "[no parameters]";
     this.call = function(args) {
 		goosh.gui.outln("");
-		temp = "<span class='wall'>I am 22yrs old, Frontend UI/UX Designer + Web Developer, from <a href='http://goo.gl/maps/6uMN' title='19.089373,72.878494' target='_blank'>Mumbai, India</a>.</span>";
+		temp = "<span class='wall'>I am 22yrs old, Frontend UI/UX Designer + Web Developer, from <a href='http://goo.gl/maps/6uMN' title='19.089373,72.878494' rel='location'>Mumbai, India</a>.</span>";
 		temp += "<br/><br/>";
+		temp += "<label>Open Source</label>,";
+		temp += "<ul>";
+		temp += "<li><a href='http://htmlcsstherightway.org/' title='HTML & CSS - The right way!' rel='github'>htmlcss-therightway</a> (Doing HTML & CSS the right way).</li>";
+		temp += "<li><a href='http://github.com/pankajparashar/pankaj-parashar' title='Pankaj Parashar' rel='personal'>pankaj-parashar</a> (My personal website, available for your forking pleasure).</li>";
+		temp += "<li><a href='http://github.com/pankajparashar/html5-boilerplate-plus' title='HTML5 Boilerplate+' rel='github'>h5bp-plus</a> (Extended version of HTML5 boilerplate).</li>";
+		temp += "<li><a href='http://github.com/pankajparashar/shorthand-css' title='Shorthand CSS' rel='github'>shorthand-css</a> (Shorthand CSS generator).</li>";
+		temp += "</ul>";
         temp += "<label>I Follow</label>,";
 		temp += "<ul>";
 		temp += "<li><a href='http://paulirish.com/' target='_blank' title='Paul Irish'>Paul Irish</a> (Developer advocate for <a href='http://chrome.google.com'>Google Chrome</a>).</li>";
-		temp += "<li><a href='http://nicolasgallagher.com/' target='_blank' title='Nicolas Gallagher'>Nicolas Gallagher</a> (Frontend Engineer at <a href='https://twitter.com/'>Twitter</a>).</li>";
+		temp += "<li><a href='http://nicolasgallagher.com/' target='_blank' title='Nicolas Gallagher'>Nicolas Gallagher</a> (Frontend Engineer at <a href='http://twitter.com/'>Twitter</a>).</li>";
 		temp += "<li><a href='http://mathiasbynens.be/' target='_blank' title='Mathias Bynens'>Mathias Bynens</a> (Freelance web developer from Belgium).</li>";
 		temp += "<li><a href='http://hakim.se/' target='_blank' title='Hakim El Hattab'>Hakim El Hattab</a> (Lead Interactive Developer at <a href='http://www.qwiki.com/'>Qwiki</a>).</li>";
 		temp += "<li><a href='http://desandro.com/'>David DeSandro</a> (Web designer at <a href='https://twitter.com/'>Twitter</a> a.k.a of <a href='http://isotope.metafizzy.co/'>Isotope</a> fame).</a> <span style='color:#898989'>(<a href='http://twitter.com/pankajparashar/web-developers/members' target='_blank' class='more_links'>+more</a>)</span></li>"
@@ -575,11 +584,14 @@ goosh.module.about = function() {
 		temp += "<li>Development (Photoshop, Dreamweaver, Sublime Text).</li>";
 		temp += "</ul>";
 	    temp += "<label>Featured On</label>,";
-		temp += "<ul>";
-		temp += "<li><a href='http://www.verynicesites.com/sites/pankaj-parashar/' target='_blank' title='Very Nice Sites'>Very Nice Sites</a> (Best web designs of 2012).</li>";
-		temp += "<li><a href='http://onepagelove.com/pankaj-parashar' target='_blank' title='One Page Love'>One Page Love</a> (Unique showcase of single page websites).</li>";
-		temp += "<li><a href='http://www.1pagewebdesign.com/2012/08/pankaj-parashar/' target='_blank' title='1Page Web Design'>1-Page Web Design</a> (One page web design gallery).</li>";
-		temp += "</ul>";
+		temp += "<table>";
+		temp += "<tr>";
+		temp += "<td><ul class='featured'><li><a href='http://www.verynicesites.com/sites/pankaj-parashar/' target='_blank' title='Very Nice Sites'>Very Nice Sites</a></li><li><a href='http://goo.gl/Ag8b3'>Smashing Web Designs</a></li></ul></td>";
+		temp += "<td><ul class='featured'><li><a href='http://onepagelove.com/pankaj-parashar' target='_blank' title='One Page Love'>One Page Love</a></li><li><a href='http://goo.gl/SxKmI' title='HTML5 Boilerplate' rel='featured'>HTML5 Boilerplate</a></li></ul></td>";
+		temp += "<td><ul class='featured'><li><a href='http://www.1pagewebdesign.com/2012/08/pankaj-parashar/' target='_blank' title='1Page Web Design'>1-Page Web Design</a></li><li><a href='http://goo.gl/3uLst' title='Instant Shift' rel='featured'>Instant Shift</a></li></ul></td>";
+		temp += "</tr>";
+		temp += "</table>";
+		temp += "<br/>";
 		temp += "<span class='wall'><a rel='license' href='http://creativecommons.org/publicdomain/zero/1.0/' title='Creative Commons CC0 1.0' target='_blank'>&copy;" + new Date().getFullYear() + "</a> | Powered by <a rel='application' href='https://appengine.google.com/' title='Google App Engine' target='_blank'>Google</a> | Hosted on <a href='http://github.com/'>GitHub</a> | Craft : <a href='http://validator.w3.org/check?uri=http%3A%2F%2Fpankajparashar.com%2F'>HTML5</a> + <a href='http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fpankajparashar.com%2F'>CSS3</a> | <a href='https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fpankajparashar.com%2F&source=tweetbutton&text=Pankaj%20Parashar&url=http%3A%2F%2Fpankajparashar.com&via=pankajparashar' title='Click to send this page to Twitter!' target='_blank' style='color:black;background-color:#1982d1;padding:0 2px'>Tweet</a>.</span>";
         goosh.gui.outln(temp);
 		goosh.gui.outln("");
@@ -588,6 +600,7 @@ goosh.module.about = function() {
 		goosh.gui.outln(" &nbsp;Color Stack,");
 		goosh.gui.outln("<ul><li>Blue &nbsp;&nbsp;- <span style='background-color:#1982D1;padding:0px 2px;'>#1982D1</span> <span style='background-color:#0BD4FB;padding:0px 2px;'>#0BD4FB</span> <span style='background-color:#87CFE6;padding:0px 2px;'>#87CFE6</span></li><li>Orange - </li><li>Red &nbsp;&nbsp;&nbsp;- <span style='background-color:#BB0F05;padding:0px 2px;color:#fff;'>#BB0F05</span></li><li>Green &nbsp;- <span style='background-color:#B1E583;padding:0px 2px;'>#B1E583</span></li><li>Yellow - <span style='background-color:#FFCB00;padding:0px 2px;'>#FFCB00</span></li></ul>");*/
         $('#input')[0].scrollIntoView();
+		jQuery(function($){ $('a[href^="http://"]') .not('[href*="pankajparashar.com"]') .attr('target','_blank'); });
     }
 };
 goosh.modules.register("about");
@@ -691,7 +704,7 @@ goosh.module.web = function() {
     this.renderResult = function(E, D, G, C, H) {
         var B = "";
         var A = this.start;
-        B += "<br/><table border='0'>";
+        B += "<br/><table width='980px'>";
         for (i = this.start; i < (this.start + parseInt(goosh.config.numres)); i++) {
             if (this.results[i]) {
                 var F = this.results[i];
@@ -798,7 +811,10 @@ goosh.module.web = function() {
 };
 goosh.modules.register("web");
 
-//News module
+/* =========== *
+ * News Module *
+ * =========== */
+
 goosh.module.news = function() {
     this.name = "news";
     this.aliases = new Array("news", "n");
@@ -809,7 +825,10 @@ goosh.module.news = function() {
 };
 goosh.modules.register("news", "web");
 
-//More module
+/* =========== *
+ * More Module *
+ * =========== */
+ 
 goosh.module.more = function() {
     this.name = "more";
     this.aliases = new Array("more", "m");
@@ -818,11 +837,15 @@ goosh.module.more = function() {
         if (goosh.config.moreobj && goosh.config.moreobj.hasmore) {
             goosh.config.moreobj.more()
             }
+		$('#input')[0].scrollIntoView();
     }
 };
 goosh.modules.register("more");
 
-//Blogs module
+/* =========== *
+ * Blogs Module *
+ * =========== */
+
 goosh.module.blogs = function() {
     this.name = "blogs";
     this.aliases = new Array("blogs", "blog", "b");
@@ -833,7 +856,10 @@ goosh.module.blogs = function() {
 };
 goosh.modules.register("blogs", "web");
 
-//Read module
+/* =========== *
+ * Read Module *
+ * =========== */
+
 goosh.module.read = function() {
     this.name = "read";
     this.aliases = new Array("read", "rss", "r");
@@ -967,7 +993,10 @@ goosh.module.feeds = function() {
 };
 goosh.modules.register("feeds", "web");
 
-//Place module
+/* ============ *
+ * Place Module *
+ * ============ */
+ 
 goosh.module.place = function() {
     this.name = "place";
     this.aliases = new Array("places", "place", "map", "p");
@@ -977,9 +1006,7 @@ goosh.module.place = function() {
     this.parameters = "[address]";
     this.help = "google maps search";
     this.helptext = "<span class='info'>examples:</span><br/><i>place New York</i>  - show new york in a map<br/>";
-    this.query = function(A, B) {
-        goosh.ajax.query("http://maps.google.com/maps/geo?q=" + encodeURIComponent(B) + "&output=json&callback=goosh.modobj." + this.name + ".render&key=" + goosh.config.apikey + "&lang=" + goosh.config.lang)
-        };
+    this.query = function(A, B) { goosh.ajax.query("http://maps.google.com/maps/geo?q=" + encodeURIComponent(B) + "&output=json&callback=goosh.modobj." + this.name + ".render&key=" + goosh.config.apikey + "&lang=" + goosh.config.lang) };
     this.call = function(A) {
         if (A.length > 0) {
             this.start = 0
@@ -1038,9 +1065,12 @@ goosh.module.place = function() {
             }
     }
 };
-goosh.modules.register("place", "web");
+/* goosh.modules.register("place", "web"); */
 
-//Tran</img module
+/* ================ *
+ * Translate Module *
+ * ================ */
+   
 goosh.module.translate = function() {
     this.name = "translate";
     this.aliases = new Array("translate", "trans", "t");
@@ -1132,22 +1162,28 @@ goosh.module.translate = function() {
         this.renderResult(C, B, D, A, E)
         }
 };
-goosh.modules.register("translate");
+/* goosh.modules.register("translate"); */
 
-//Images module
+/* ============= *
+ * Images Module *
+ * ============= */
+ 
 goosh.module.images = function() {
     this.name = "images";
-    this.aliases = new Array("images", "image", "i");
+    this.aliases = new Array("images", "image", "img", "i");
     this.mode = true;
     this.help = "google image search";
     this.helptext = "<span class='info'>examples:</span><br/><i>images foo bar</i>  - searches for &quot;foo bar&quot; images<br/>"
 };
 goosh.modules.register("images", "web");
 
-//Video module	
+/* ============= *
+ * Videos Module *
+ * ============= */
+
 goosh.module.video = function() {
     this.name = "video";
-    this.aliases = new Array("videos", "video", "v");
+    this.aliases = new Array("videos", "video", "vid", "v");
     this.mode = true;
     this.parameters = "[keywords]";
     this.help = "google video search";
@@ -1155,7 +1191,10 @@ goosh.module.video = function() {
 };
 goosh.modules.register("video", "web");
 
-//Clear module	
+/* ============ *
+ * Clear Module *
+ * ============ */
+
 goosh.module.clear = function() {
     this.name = "clear";
     this.aliases = new Array("clear", "c");
@@ -1167,7 +1206,10 @@ goosh.module.clear = function() {
 };
 goosh.modules.register("clear");
 
-//Wiki module
+/* =========== *
+ * Wiki Module *
+ * =========== */
+
 goosh.module.wiki = function() {
     this.name = "wiki";
     this.aliases = new Array("wikipedia", "wiki");
@@ -1177,14 +1219,13 @@ goosh.module.wiki = function() {
 };
 goosh.modules.register("wiki", "web");
 
-/** =============================================================================
-   	HELP MODULE
-   	============================================================================= 
-**/
+/* =========== *
+ * Help Module *
+ * =========== */
 
 goosh.module.help = function() {
     this.name = "help";
-    this.aliases = new Array("help", "man", "h", "?");
+    this.aliases = new Array("help", "man", "ls", "h", "?");
     this.help = "displays help text";
     this.helptext = "";
     this.parameters = "[command]";
@@ -1201,8 +1242,8 @@ goosh.module.help = function() {
             goosh.gui.error("command &quot;" + C[0] + "&quot; not found.");
             return false
         }
-        B += "<table border='0' class='help' style='width:60%'>";
-        B += "<tr><td class='less'>command</td><td class='less'>alias</td><td class='less'>parameters</td><td class='less'>description</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
+        B += "<table border='0' class='help'>";
+        B += "<tr><td class='less' width='100px'>command</td><td class='less' width='130px'>alias</td><td class='less' width='220px'>parameters</td><td class='less'>description</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>";
         var A;
         for (key in goosh.modules.list) {
             if (!C[0] || key == C[0]) {
@@ -1254,7 +1295,10 @@ goosh.module.help = function() {
 };
 goosh.modules.register("help");
 
-//CD module
+/* ========= *
+ * CD Module *
+ * ========= */
+
 goosh.module.cd = function() {
     this.name = "cd";
     this.aliases = new Array("cd");
@@ -1279,7 +1323,10 @@ goosh.module.cd = function() {
 };
 goosh.modules.register("cd");
 
-//Site module
+/* =========== *
+ * Site Module *
+ * =========== */
+
 goosh.module.site = function() {
     this.name = "site";
     this.aliases = new Array("site", "in");
@@ -1289,7 +1336,10 @@ goosh.module.site = function() {
 };
 goosh.modules.register("site", "web");
 
-//Open module
+/* =========== *
+ * Open Module *
+ * =========== */
+
 goosh.module.open = function() {
     this.name = "open";
     this.aliases = new Array("open", "o");
@@ -1299,7 +1349,6 @@ goosh.module.open = function() {
     this.call = function(B) {
         for (i = 0; i < B.length; i++) {
             var A = B[i];
-
             if (A.indexOf("http://") == -1 && A.indexOf("https://")) {
                 A = "http://" + A
             }
@@ -1309,7 +1358,10 @@ goosh.module.open = function() {
 };
 goosh.modules.register("open");
 
-//Go module
+/* ========= *
+ * Go Module *
+ * ========= */
+
 goosh.module.go = function() {
     this.name = "go";
     this.aliases = new Array("go", "g");
@@ -1327,7 +1379,10 @@ goosh.module.go = function() {
 };
 goosh.modules.register("go");
 
-//Lucky module
+/* ============ *
+ * Lucky Module *
+ * ============ */
+
 goosh.module.lucky = function() {
     this.name = "lucky";
     this.aliases = new Array("lucky", "l");
@@ -1347,52 +1402,15 @@ goosh.module.lucky = function() {
             if (B.results[0].unescapedUrl) {
                 setTimeout('window.location.href = "' + B.results[0].unescapedUrl + '"', 0)
                 }
-            goosh.gui.showinput();
-            goosh.gui.focusinput();
-            goosh.gui.scroll()
-            }
+           }
     }
 };
 goosh.modules.register("lucky", "web");
 
-//LS module
-goosh.module.ls = function() {
-    this.name = "ls";
-    this.aliases = new Array("ls");
-    this.help = "list all the commands";
-    this.helptext = "this exists just for convenience. Use <span class='info'>help</span> for help.<br/>";
-    this.parameters = "[command]";
-    this.call = function(C) {
-        var B = "";
-        if (C[0] && !goosh.modules.list[C[0]]) {
-            goosh.gui.error("command &quot;" + C[0] + "&quot; not found.");
-            return false
-        }
-        B += "<table border='0' class='help' style='width:60%'><tr>";
-        var A;
-        var D = 0;
-        for (key in goosh.modules.list) {
-            if (C.length == 0 || key == C[0]) {
-                A = goosh.modules.list[key];
-                B += "<td";
-                if (A.mode) {
-                    B += " class='info'"
-                }
-                B += ">" + A.name + "</td><td>";
-                if (D == 5) {
-                    D = 0;
-                    B += "</tr><tr>"
-                }
-                D++
-            }
-        }
-        B += "</tr></table>";
-        goosh.gui.outln(B)
-        }
-};
-goosh.modules.register("ls");
+/* ================ *
+ * Calculate Module *
+ * ================ */
 
-//Calculate module
 goosh.module.calculate = function() {
     this.name = "calculate";
     this.aliases = new Array("calculate", "calc");
@@ -1404,16 +1422,19 @@ goosh.module.calculate = function() {
         var expin = exp;
         if (exp.match(/^[0-9\+\-\/\*\. \^\(\)]+$/)) {
             exp = exp.replace(/([0-9]+)\^([0-9]+)/g, "Math.pow($1,$2)");
-            goosh.gui.outln(expin + " = " + eval(exp) + "<br/>")
+            goosh.gui.outln("&nbsp;=> " + expin + " = " + eval(exp))
             } else {
-            goosh.gui.error("could not calculate that.");
+            goosh.gui.error("Sorry! My maths is not that strong:(");
             return false
         }
     }
 };
 goosh.modules.register("calculate");
 
-//Settings module
+/* =============== *
+ * Settings Module *
+ * =============== */
+
 goosh.module.settings = function() {
     this.name = "settings";
     this.aliases = new Array("settings", "set");
@@ -1690,12 +1711,4 @@ var BrowserDetect = {
     };
 BrowserDetect.init();
 
-document.getElementById("date").innerHTML = moment().format("dddd, MMMM DD YYYY, HH:mm:ss");
 document.getElementById("client").innerHTML = '#1: Client - ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' + ' + BrowserDetect.OS;
-document.getElementById("count-up").innerHTML = countdown(new Date(1989, 10, 15));
-setInterval(function() {
-    document.getElementById("date").innerHTML = moment().format("dddd, MMMM DD YYYY, HH:mm:ss");
-    document.getElementById("count-up").innerHTML = countdown(new Date(1989, 10, 15));
-}, 1000);
-$('#input').css("color", "#FF6400");
-$("a").attr("target","_blank");
