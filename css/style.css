@@ -155,7 +155,7 @@ button, input, select, textarea
 	color:#fff;
 	background:#000 !important;
 	border:0;
-	width:100%;
+	width:500px;
 	outline:0;
 	vertical-align:baseline;
 	*vertical-align:middle
@@ -270,12 +270,12 @@ table, tr, td
 	bottom:0;
 	padding:0 15px 0 0;
 	min-width:980px;
-	overflow-y:scroll
+	overflow-y:scroll;
 }
 
 #head   { color:#ccc }
 #output { border:0 } 
-#input  { padding:0 0 100px 0 }
+#input  { padding:0 0 200px 0 }
 
 #prompt
 {
@@ -321,7 +321,7 @@ a.award:hover
 	       opacity:0.5 													/* Good browsers */
 }
 
-.ads_section
+.ads_section 
 {
     display:block;
     position:absolute;
@@ -331,7 +331,6 @@ a.award:hover
 }
 
 .less { color:#f80 }
-
-.reformat_m { font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:13px }
-
+.featured { font-style:italic; width:160px; margin-bottom:0 }
+.help { margin-left:5px; left:5px }
 .more_links { font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:13px; border-bottom:1px solid #09c }
