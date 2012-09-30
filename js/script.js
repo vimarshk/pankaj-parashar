@@ -552,7 +552,7 @@ goosh.module.about = function() {
 		goosh.gui.outln("");
 		temp = "<span class='wall'>I am 22yrs old, Frontend UI/UX Designer + Web Developer, from <a href='http://goo.gl/maps/6uMN' title='19.089373,72.878494' rel='location'>Mumbai, India</a>.</span>";
 		temp += "<br/><br/>";
-		temp += "<label>Open Source</label>,";
+		temp += "Projects,";
 		temp += "<ul>";
 		temp += "<li><a href='http://htmlcsstherightway.org/' title='HTML & CSS - The right way!' rel='github'>htmlcss-therightway</a> (Doing HTML & CSS the right way).</li>";
 		temp += "<li><a href='http://github.com/pankajparashar/pankaj-parashar' title='Pankaj Parashar' rel='personal'>pankaj-parashar</a> (My personal website, available for your forking pleasure).</li>";
@@ -588,7 +588,7 @@ goosh.module.about = function() {
 		temp += "<tr>";
 		temp += "<td><ul class='featured'><li><a href='http://www.verynicesites.com/sites/pankaj-parashar/' target='_blank' title='Very Nice Sites'>Very Nice Sites</a></li><li><a href='http://goo.gl/Ag8b3'>Smashing Web Designs</a></li></ul></td>";
 		temp += "<td><ul class='featured'><li><a href='http://onepagelove.com/pankaj-parashar' target='_blank' title='One Page Love'>One Page Love</a></li><li><a href='http://goo.gl/SxKmI' title='HTML5 Boilerplate' rel='featured'>HTML5 Boilerplate</a></li></ul></td>";
-		temp += "<td><ul class='featured'><li><a href='http://www.1pagewebdesign.com/2012/08/pankaj-parashar/' target='_blank' title='1Page Web Design'>1-Page Web Design</a></li><li><a href='http://goo.gl/3uLst' title='Instant Shift' rel='featured'>Instant Shift</a></li></ul></td>";
+		temp += "<td><ul class='featured'><li><a href='http://goo.gl/3uLst' title='Instant Shift' rel='featured'>Instant Shift</a></li><li><a href='http://www.1pagewebdesign.com/2012/08/pankaj-parashar/' target='_blank' title='1Page Web Design'>1-Page Web Design</a></li></ul></td>";
 		temp += "</tr>";
 		temp += "</table>";
 		temp += "<br/>";
@@ -604,7 +604,7 @@ goosh.module.about = function() {
     }
 };
 goosh.modules.register("about");
-/*... End About Module ...*/
+/*=== End About Module ===*/
 
 /*... Experiments Module ...*/
 goosh.module.experiments = function() {
