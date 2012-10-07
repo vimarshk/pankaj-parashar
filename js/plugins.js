@@ -28,7 +28,7 @@ Modernizr.load([
   },
   { load:'//bitbucket.org/mckamey/countdown.js/raw/tip/countdown.js',
   	complete: function(){
-		document.getElementById("count-up").innerHTML = countdown(new Date(1989, 10, 15));
+		document.getElementById("count-up").innerHTML = countdown(new Date(1989, 9, 15));
 	}
  },
   { 
@@ -37,7 +37,7 @@ Modernizr.load([
 		document.getElementById("date").innerHTML = moment().format("dddd, MMMM DD YYYY, HH:mm:ss");
 		setInterval(function() {
     document.getElementById("date").innerHTML = moment().format("dddd, MMMM DD YYYY, HH:mm:ss");
-    document.getElementById("count-up").innerHTML = countdown(new Date(1989, 10, 15));
+    document.getElementById("count-up").innerHTML = countdown(new Date(1989, 9, 15));
 }, 1000);
 
 	}
