@@ -63,31 +63,40 @@ html, body
  * Links : Improve readability when focused and hovered in all browsers: h5bp.com/h *
  * ================================================================================ */
  
-a
-{
-	color:#09c;
-	text-decoration:none;
-	-webkit-tap-highlight-color:#e53b2c
+a:link, a:active, a:visited {
+
+    color:#09c;
+		-webkit-tap-highlight-color:#e53b2c;
+
+    -webkit-transition:all .8s cubic-bezier(0.165,0.84,0.44,1);
+       -moz-transition:all .8s cubic-bezier(0.165,0.84,0.44,1);
+        -ms-transition:all .8s cubic-bezier(0.165,0.84,0.44,1);
+         -o-transition:all .8s cubic-bezier(0.165,0.84,0.44,1);
+            transition:all .8s cubic-bezier(0.165,0.84,0.44,1);
+
+    border-bottom:1px solid rgba(252,54,45,0);
+    text-decoration:none;
+    padding-bottom:5px
 }
 
-a:hover
-{
-	text-decoration:none;
+a:hover {
+    
+    -webkit-transition:all 1s cubic-bezier(0.165,0.84,0.44,1);
+       -moz-transition:all 1s cubic-bezier(0.165,0.84,0.44,1);
+        -ms-transition:all 1s cubic-bezier(0.165,0.84,0.44,1);
+             -o-transition:all 1s cubic-bezier(0.165,0.84,0.44,1);                                
+			 transition:all 1s cubic-bezier(0.165,0.84,0.44,1);    
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
+    filter:alpha(opacity=50);                                       
+      -moz-opacity:0.5;                                             
+    -khtml-opacity:0.5;                                                    
+           opacity:0.5;                                                  
 
-	-webkit-transition:all .2s ease-in-out;
-  	   -moz-transition:all .2s ease-in-out;
-         -o-transition:all .2s ease-in-out;
-            transition:all .2s ease-in-out;
-	
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 	/* IE 8          */
-	    filter:alpha(opacity=50);                                       /* IE 5-7        */
+    border-bottom:1px dotted #09c;
+    padding-bottom:0;
+}​
 
-	  -moz-opacity:0.5;													/* Netscape      */
-	-khtml-opacity:0.5;													/* Safari 1.x    */
-	       opacity:0.5 													/* Good browsers */
-}
-
-a:visited         { color:#09c }
+a:visited         { color:#f80 }
 a:focus           { outline:thin dotted }
 a:hover, a:active { outline:0 }
 
