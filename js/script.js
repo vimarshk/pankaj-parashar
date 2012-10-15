@@ -550,7 +550,7 @@ goosh.module.about = function() {
     this.parameters = "[no parameters]";
     this.call = function(args) {
 		goosh.gui.outln("");
-		temp = "<span class='wall'>I am 22yrs old, Frontend UI/UX Designer + Web Developer, from <a href='http://goo.gl/maps/6uMN' title='19.089373,72.878494' rel='location'>Mumbai, India</a>.</span>";
+		temp = "<span class='wall'>I am 23yrs old, Frontend UI/UX Designer + Web Developer, from <a href='http://goo.gl/maps/6uMN' title='19.089373,72.878494' rel='location'>Mumbai, India</a>.</span>";
 		temp += "<br/><br/>";
 		temp += "Projects,";
 		temp += "<ul>";
