@@ -559,10 +559,24 @@ goosh.module.about = function() {
 		temp += "<li><a href='http://github.com/pankajparashar/html5-boilerplate-plus' title='HTML5 Boilerplate+' rel='github'>h5bp-plus</a> (Extended version of HTML5 boilerplate).</li>";
 		temp += "<li><a href='http://github.com/pankajparashar/shorthand-css' title='Shorthand CSS' rel='github'>shorthand-css</a> (Shorthand CSS generator).</li>";
 		temp += "</ul>";
-		temp += "Authors<br>";
-		temp += "├─ TXP Magazine (International magazine from the Textpattern community).<br>";
-		temp += "└─ SpeckyBoy (Design magazine for web development tutorials & resources).<br>";
-        	temp += "<label>I Follow</label>,";
+
+temp += "Projects<br>";
+temp += "├─ htmlcss-therightway (Doing HTML & CSS the right way).<br>";
+temp += "├─ pankaj-parashar (My personal website, available for your forking pleasure).<br>";
+temp += "├─ h5bp-plus (Extended version of HTML5 boilerplate).<br>";
+temp += "└─ shorthand-css (Online generator to convert longhand css to shorthand).<br><br>";
+
+temp += "Skills<br>";
+temp += "├─ HTML5, CSS3, jQuery<br>";
+temp += "├─ PHP, Python, NodeJS<br>";
+temp += "├─ C, C++, Java, SQL<br>";
+temp += "└─ Wordpress, Joomla, Drupal<br><br>";
+
+temp += "Authors<br>";
+temp += "├─ TXP Magazine (International magazine from the Textpattern community).<br>";
+temp += "└─ SpeckyBoy (Design magazine for web development tutorials & resources).<br><br>";
+   	
+		temp += "<label>I Follow</label>,";
 		temp += "<ul>";
 		temp += "<li><a href='http://paulirish.com/' target='_blank' title='Paul Irish'>Paul Irish</a> (Developer advocate for <a href='http://chrome.google.com'>Google Chrome</a>).</li>";
 		temp += "<li><a href='http://nicolasgallagher.com/' target='_blank' title='Nicolas Gallagher'>Nicolas Gallagher</a> (Frontend Engineer at <a href='http://twitter.com/'>Twitter</a>).</li>";
