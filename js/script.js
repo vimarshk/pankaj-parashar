@@ -560,12 +560,6 @@ goosh.module.about = function() {
 		temp += "<li><a href='http://github.com/pankajparashar/shorthand-css' title='Shorthand CSS' rel='github'>shorthand-css</a> (Shorthand CSS generator).</li>";
 		temp += "</ul>";
 
-temp += "<pre>
-Authors  
-├─ TXP Magazine (International magazine from the Textpattern community).
-└─ SpeckyBoy (Design magazine for web development tutorials & resources).
-</pre>";
-
 /*
 temp += "Projects<br>";
 temp += "├─ htmlcss-therightway (Doing HTML & CSS the right way).<br>";
